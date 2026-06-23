@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaza Enterprise (Pty) Ltd</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            line-height:1.6;
+            color:#333;
+        }
+
+        header{
+            background:#0b3d91;
+            color:white;
+            padding:20px 10%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .logo{
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .hero{
+            background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+            url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1500&q=80');
+            background-size:cover;
+            background-position:center;
+            height:80vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            text-align:center;
+            color:white;
+            padding:20px;
+        }
+
+        .hero-content h1{
+            font-size:3rem;
+            margin-bottom:15px;
+        }
+
+        .hero-content p{
+            font-size:1.2rem;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            display:inline-block;
+            background:#ff9900;
+            color:white;
+            padding:12px 25px;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+        }
+
+        section{
+            padding:70px 10%;
+        }
+
+        h2{
+            text-align:center;
+            margin-bottom:40px;
+            color:#0b3d91;
+        }
+
+        .about{
+            text-align:center;
+            max-width:900px;
+            margin:auto;
+        }
+
+        .services{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+            gap:25px;
+        }
+
+        .service-card{
+            background:#f5f5f5;
+            padding:25px;
+            border-radius:10px;
+            text-align:center;
+            box-shadow:0 3px 10px rgba(0,0,0,.1);
+        }
+
+        .service-card h3{
+            color:#0b3d91;
+            margin-bottom:10px;
+        }
+
+        .why-us{
+            background:#0b3d91;
+            color:white;
+        }
+
+        .why-grid{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+            text-align:center;
+        }
+
+        .contact{
+            text-align:center;
+        }
+
+        .contact-info{
+            margin-top:20px;
+            font-size:18px;
+        }
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+        @media(max-width:768px){
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            .hero-content h1{
+                font-size:2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">HALAZA ENTERPRISE (PTY) LTD</div>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Building Excellence, Powering the Future</h1>
+        <p>
+            Professional Construction, Solar Installation, Gas Installation,
+            Electric Fencing and General Engineering Services.
+        </p>
+
+        <a href="#contact" class="btn">Get a Free Quote</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+
+    <div class="about">
+        <p>
+            Halaza Enterprise (Pty) Ltd is a trusted South African company
+            providing high-quality construction, solar energy solutions,
+            gas installations, electric fencing, maintenance and related
+            engineering services. We are committed to delivering safe,
+            reliable and cost-effective solutions for residential,
+            commercial and industrial clients.
+        </p>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+        <div class="service-card">
+            <h3>Construction</h3>
+            <p>
+                Residential, commercial and industrial construction,
+                renovations and maintenance services.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Solar Installation</h3>
+            <p>
+                Solar panels, inverters, batteries and complete
+                renewable energy solutions.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Gas Installation</h3>
+            <p>
+                Safe and compliant gas installations for homes,
+                restaurants and businesses.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Electric Fencing</h3>
+            <p>
+                Supply, installation and maintenance of electric
+                fence systems for improved security.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>Electrical Services</h3>
+            <p>
+                Electrical installations, repairs, maintenance and
+                compliance services.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <h3>General Maintenance</h3>
+            <p>
+                Property maintenance, repairs and project management
+                solutions.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<section class="why-us">
+    <h2 style="color:white;">Why Choose Us?</h2>
+
+    <div class="why-grid">
+        <div>
+            <h3>Experienced Team</h3>
+            <p>Qualified professionals with industry expertise.</p>
+        </div>
+
+        <div>
+            <h3>Quality Workmanship</h3>
+            <p>We deliver reliable and durable solutions.</p>
+        </div>
+
+        <div>
+            <h3>Affordable Pricing</h3>
+            <p>Competitive rates without compromising quality.</p>
+        </div>
+
+        <div>
+            <h3>Customer Focused</h3>
+            <p>Your satisfaction is our priority.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <p>Get in touch for quotations and project consultations.</p>
+
+    <div class="contact-info">
+        <p><strong>Phone:</strong> +27 XX XXX XXXX</p>
+        <p><strong>Email:</strong> info@halazaenterprise.co.za</p>
+        <p><strong>Location:</strong> South Africa</p>
+    </div>
+</section>
+
+<footer>
+    <p>
+        &copy; 2026 Halaza Enterprise (Pty) Ltd. All Rights Reserved.
+    </p>
+</footer>
+
+</body>
+</html>
